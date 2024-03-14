@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		09376D2D2BA23E8900F86050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D2C2BA23E8900F86050 /* AppDelegate.swift */; };
 		09376D2F2BA23E8900F86050 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D2E2BA23E8900F86050 /* SceneDelegate.swift */; };
-		09376D312BA23E8900F86050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D302BA23E8900F86050 /* ViewController.swift */; };
-		09376D342BA23E8900F86050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09376D322BA23E8900F86050 /* Main.storyboard */; };
+		09376D312BA23E8900F86050 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D302BA23E8900F86050 /* HomeViewController.swift */; };
 		09376D372BA23E8900F86050 /* fogata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09376D352BA23E8900F86050 /* fogata.xcdatamodeld */; };
 		09376D392BA23E8D00F86050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09376D382BA23E8D00F86050 /* Assets.xcassets */; };
 		09376D3C2BA23E8D00F86050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09376D3A2BA23E8D00F86050 /* LaunchScreen.storyboard */; };
+		09376D4D2BA26B2500F86050 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D4C2BA26B2500F86050 /* DetailsViewController.swift */; };
+		09376D502BA2811300F86050 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D4F2BA2811300F86050 /* HomeViewModel.swift */; };
+		09376D522BA2814900F86050 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D512BA2814900F86050 /* DataManager.swift */; };
+		09376D552BA283DE00F86050 /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09376D542BA283DE00F86050 /* PinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09376D292BA23E8900F86050 /* fogata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fogata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09376D2C2BA23E8900F86050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09376D2E2BA23E8900F86050 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09376D302BA23E8900F86050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09376D332BA23E8900F86050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09376D302BA23E8900F86050 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		09376D362BA23E8900F86050 /* fogata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fogata.xcdatamodel; sourceTree = "<group>"; };
 		09376D382BA23E8D00F86050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09376D3B2BA23E8D00F86050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09376D3D2BA23E8D00F86050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09376D4C2BA26B2500F86050 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		09376D4F2BA2811300F86050 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		09376D512BA2814900F86050 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		09376D542BA283DE00F86050 /* PinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		09376D2B2BA23E8900F86050 /* fogata */ = {
 			isa = PBXGroup;
 			children = (
+				09376D532BA2838400F86050 /* Models */,
+				09376D4E2BA280FC00F86050 /* ViewModels */,
+				09376D472BA2438200F86050 /* Managers */,
+				09376D432BA242D900F86050 /* Controllers */,
 				09376D2C2BA23E8900F86050 /* AppDelegate.swift */,
 				09376D2E2BA23E8900F86050 /* SceneDelegate.swift */,
-				09376D302BA23E8900F86050 /* ViewController.swift */,
-				09376D322BA23E8900F86050 /* Main.storyboard */,
 				09376D382BA23E8D00F86050 /* Assets.xcassets */,
 				09376D3A2BA23E8D00F86050 /* LaunchScreen.storyboard */,
 				09376D3D2BA23E8D00F86050 /* Info.plist */,
 				09376D352BA23E8900F86050 /* fogata.xcdatamodeld */,
 			);
 			path = fogata;
+			sourceTree = "<group>";
+		};
+		09376D432BA242D900F86050 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09376D302BA23E8900F86050 /* HomeViewController.swift */,
+				09376D4C2BA26B2500F86050 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		09376D472BA2438200F86050 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				09376D512BA2814900F86050 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		09376D4E2BA280FC00F86050 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				09376D4F2BA2811300F86050 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09376D532BA2838400F86050 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09376D542BA283DE00F86050 /* PinModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +171,6 @@
 			files = (
 				09376D3C2BA23E8D00F86050 /* LaunchScreen.storyboard in Resources */,
 				09376D392BA23E8D00F86050 /* Assets.xcassets in Resources */,
-				09376D342BA23E8900F86050 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09376D312BA23E8900F86050 /* ViewController.swift in Sources */,
+				09376D312BA23E8900F86050 /* HomeViewController.swift in Sources */,
+				09376D552BA283DE00F86050 /* PinModel.swift in Sources */,
 				09376D372BA23E8900F86050 /* fogata.xcdatamodeld in Sources */,
+				09376D502BA2811300F86050 /* HomeViewModel.swift in Sources */,
+				09376D522BA2814900F86050 /* DataManager.swift in Sources */,
 				09376D2D2BA23E8900F86050 /* AppDelegate.swift in Sources */,
+				09376D4D2BA26B2500F86050 /* DetailsViewController.swift in Sources */,
 				09376D2F2BA23E8900F86050 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +195,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		09376D322BA23E8900F86050 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09376D332BA23E8900F86050 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		09376D3A2BA23E8D00F86050 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +332,6 @@
 				INFOPLIST_FILE = fogata/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +359,6 @@
 				INFOPLIST_FILE = fogata/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
